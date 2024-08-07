@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Institute Policy</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+        .policy-section {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px;
+        }
+        .policy-header {
+            font-size: 1.5em;
+            color: #343a40;
+            margin-bottom: 15px;
+        }
+        .policy-content {
+            font-size: 1em;
+            color: #6c757d;
+        }
+        .policy-button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+            <img src="logo2.jpg" alt="Keerti Computer Institute" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><b>Home</b></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="about.html"><b>About</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="courses.html"><b>Courses</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html"><b>Contact</b></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="policy-section">
+            <div class="policy-header">
+                Institute Policies
+                <button class="btn btn-primary policy-button" type="button" data-toggle="collapse" data-target="#policyContent" aria-expanded="false" aria-controls="policyContent">
+                    View Policies
+                </button>
+            </div>
+            <div class="collapse" id="policyContent">
+                <div class="policy-content">
+                    <p><strong>Attendance Policy:</strong> Students are required to maintain at least 75% attendance in all classes.</p>
+                    <p><strong>Code of Conduct:</strong> All students must adhere to the institute's code of conduct, which includes respect for faculty, staff, and fellow students.</p>
+                    <p><strong>Examination Policy:</strong> All examinations are to be taken on the scheduled dates. No exceptions will be made unless in the case of a medical emergency with proper documentation.</p>
+                    <p><strong>Fee Policy:</strong> Fees must be paid by the due dates. Late payments may incur additional charges.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.policy-button').click(function(){
+                $(this).text(function(i, text){
+                    return text === "View Policies" ? "Hide Policies" : "View Policies";
+                })
+            });
+        });
+    </script>
+        <footer class="bg-light text-center py-4">
+            <p>&copy; 2024 Keerti Computer Institute. All Rights Reserved.
+                <br><u>Developed By Prathamesh Khandait.</u><br>
+            </p>
+        </footer>
+</body>
+</html>
